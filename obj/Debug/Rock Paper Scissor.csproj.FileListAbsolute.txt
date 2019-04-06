@@ -1,0 +1,9 @@
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\bin\Rock Paper Scissor.dll.config
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\bin\Rock Paper Scissor.dll
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\bin\Rock Paper Scissor.pdb
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\obj\Debug\Rock Paper Scissor.csprojResolveAssemblyReference.cache
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\obj\Debug\Rock Paper Scissor.csproj.CoreCompileInputs.cache
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\obj\Debug\Rock Paper Scissor.dll
+c:\users\roeea\source\repos\Rock Paper Scissor\Rock Paper Scissor\obj\Debug\Rock Paper Scissor.pdb
