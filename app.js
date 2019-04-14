@@ -7,19 +7,7 @@ const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
-var span = document.getElementsByClassName(".close-button")[0];
-
-
-span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
+const counter_div = document.getElementById("dlgbox");
 
 function getComputerChoice()
 {
@@ -31,14 +19,18 @@ function win(userChoice,computerChoice)
 {
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_div.innerHTML = userChoice + " beats " + computerChoice + ". You WIN!";
+    result_div.innerHTML = "You WIN!";
 }
 function lose(userChoice,computerChoice)
 {
     console.log("lose");
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = computerChoice + " beats " + userChoice + ". You LOSE!";
+    result_div.innerHTML = "You LOSE!";
+}
+function draw()
+{
+    result_div.innerHTML = 'DRAW!';
 }
 function game(userChoice)
 {
@@ -58,13 +50,35 @@ function game(userChoice)
         case "rr":
         case "pp":
         case "ss":
-            console.log("draw");
+            draw();
             break;
     }
 }
+function started_pop_up(){
+    swal.fire({   
+        title: "New Game",   
+        text: "How much you wanna play???:",   
+        input: 'text',   
+        showCancelButton: true,   
+        closeOnConfirm: false,   
+        animation: "slide-from-top",   
+        inputPlaceholder: "insert a number" ,
+        closeOnClickOutside: false },
+        function(inputValue)
+        {   
+            if (inputValue === false) 
+            return false;      
+               if (inputValue === "") {     
+                swal.showInputError("Please enter a number!");     
+                return false   
+                }      
+             swal("Action Saved!", "You entered following email: " + inputValue, "success"); 
+        });
+
+}
 function main()
 {
-    toggleModal();
+    pop_up();
     rock_div.addEventListener('click',function()
     {
         game("r");
